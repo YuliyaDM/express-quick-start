@@ -1,17 +1,20 @@
 <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link <% if (active === 'bio') { %>active<% } %>" id="bio" href="./bio">Biography</a>
+      <a class="nav-link <% if (active === 'bio') { %>active<% } %>" href="/bio">Biography</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link <% if (active === 'authors') { %>active<% } %>" id="authors" href="./authors">Creators</a>
+      <a class="nav-link <% if (active === 'authors') { %>active<% } %>" href="/authors">Authors</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link <% if (active === 'reqMethods') { %>active<% } %>" id="reqMethods" href="./reqMethodsMain">Request Methods</a>
+        <a class="nav-link <% if (active === 'reqMethods') { %>active<% } %>" href="/reqMethodsMain">Request Methods</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" id="reqMethods" href="./api/sites">Sites API</a>
+        <a class="nav-link <% if (active === 'sitesAPI') { %>active<% } %>" href="/api/sites">Sites API</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link <% if (active === 'index') { %>active<% } %>" id="home" href="./">Home</a>
+        <a class="nav-link <% if (active === 'users') { %>active<% } %>" href="/users/12345/Viktoria">User example</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link <% if (active === 'index') { %>active<% } %>" href="/">Home</a>
     </li>
 </ul>

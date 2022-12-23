@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Init = void 0;
+/* eslint-disable n/no-path-concat */
 const express_1 = __importDefault(require("express"));
 const path_1 = __importDefault(require("path"));
 const middleware_1 = require("./middleware");
@@ -19,8 +20,7 @@ function Init(App) {
     // static folder
     App.use(express_1.default.static(path_1.default.resolve(RootDir, 'ejs')));
     // styles folder settings
-    // eslint-disable-next-line n/no-path-concat
-    App.use('./styles', express_1.default.static(__dirname + '/styles/style.css'));
+    App.use('/styles', express_1.default.static(__dirname + '/styles/style.css'));
     // body parser
     App.use(BodyParser.urlencoded({ extended: false }));
     App.use(BodyParser.json());

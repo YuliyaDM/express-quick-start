@@ -1,3 +1,4 @@
+/* eslint-disable n/no-path-concat */
 import express from 'express'
 import path from 'path'
 
@@ -20,8 +21,7 @@ export function Init (App: express.Application) {
 
   // styles folder settings
 
-  // eslint-disable-next-line n/no-path-concat
-  App.use('./styles', express.static(__dirname + '/styles/style.css'))
+  App.use('/styles', express.static(__dirname + '/styles/style.css'))
 
   // body parser
 
