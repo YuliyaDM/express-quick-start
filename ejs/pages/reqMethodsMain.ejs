@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <%- include('../partials/navbar'); %>
+    <form method="POST" action="/reqMethodsMain">
+        <input type="text" name="username" placeholder="write your username (post)">
+        <input type="text" name="last name" placeholder="your last name: (post)">
+        <input type="text" name="age" placeholder="your age: (post)">
+        <input type="submit">
+    </form>
+    <form method="GET" action="/reqMethodsMain">
+        <input type="text" name="username" placeholder="your username: (get)">
+        <input type="text" name="last name" placeholder="your last name: (get)">
+        <input type="text" name="age" placeholder="your age: (get)">
+        <input type="submit">
+    </form>
+</body>
+</html>

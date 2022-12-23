@@ -1,0 +1,11 @@
+* a.active {
+    color: rgb(255, 74, 74) !important;
+}
+
+.param {
+    display: flex;
+}
+
+.params-key, .params-value {
+    white-space: break-spaces;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <%- include('../partials/navbar'); %>
+    <div class="params">
+        <div class="params-container">
+            <div class="params-inner">
+                <%  for (let i=0; i < params.length; i++) { 
+                        const key = Object.keys(params[i]);
+                        const value = Object.values(params[i]);
+                        %>
+                        <div class="param">
+                            <div class="params-key">Your <%= key %> is </div>
+                            <div class="params-value"><%= value %> </div>
+                        </div> 
+                        <% 
+                    }
+                %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
