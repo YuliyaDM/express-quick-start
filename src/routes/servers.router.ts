@@ -1,11 +1,11 @@
 import { Router } from 'express'
 
-import { SitesList } from '../controllers/servers'
+const sitesListController = require('../controllers/sitesList.controller')
 
 const router = Router()
 
 router
   .route('/api/sites')
-  .get(SitesList)
+  .get(sitesListController.getSitesList)
 
 export { router as default }
