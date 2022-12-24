@@ -8,7 +8,9 @@ const colors_1 = __importDefault(require("colors"));
 const express_1 = require("express");
 const router = (0, express_1.Router)();
 exports.default = router;
-router.get('/users/:id/:name', (req, res) => {
+router
+    .route('/users/:id/:name')
+    .get((req, res) => {
     const id = req.params.id;
     const name = req.params.name;
     res.render('user', { title: `User-${id} "${name}"`, id, name, active: 'users' });
